@@ -1,23 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home'
+import About from './components/About'
 
 function App() {
+  let myName = "Auzan"
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // hanya bisa me-return 1 element
+    <div className="container">
+      <h1>ini adalah APP milik {myName}</h1>
+
+      <Home />
+
+      <Home />
+
+      <Home />
+
+      <Home />
+
+      <About />
+
     </div>
   );
 }
